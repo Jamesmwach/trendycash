@@ -9,6 +9,7 @@ import { renderUserProfile } from './user/UserProfile.js';
 import { renderTriviaGame } from './user/TriviaGame.js';
 import { renderArticleView } from './user/ArticleView.js';
 import { renderSubscriptionPayment } from './user/SubscriptionPayment.js';
+import { createIcons } from 'lucide';
 
 // Make loadUserSection globally available
 window.loadUserSection = async function(section, user, payload = {}) {
@@ -67,7 +68,7 @@ async function setupDashboard(container, user) {
         <div class="p-6">
           <div class="flex items-center space-x-2 mb-8">
             <div class="w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/></svg>
+              <i data-lucide="credit-card" class="w-6 h-6 text-white"></i>
             </div>
             <h1 class="text-xl font-bold text-gray-800">Trendy Cash</h1>
           </div>
@@ -87,7 +88,7 @@ async function setupDashboard(container, user) {
 
       <!-- Mobile menu button -->
       <button id="mobileMenuBtn" class="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-lg">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+        <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
 
       <!-- Main Content -->
@@ -121,6 +122,8 @@ async function setupDashboard(container, user) {
 
   // Attach listeners after render
   setTimeout(() => {
+    createIcons(); // Render icons in the dashboard layout
+
     document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
       document.getElementById('sidebar')?.classList.toggle('-translate-x-full');
     });

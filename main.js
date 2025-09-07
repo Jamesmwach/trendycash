@@ -1,4 +1,5 @@
 import './style.css';
+import { createIcons } from 'lucide';
 import { createSupabaseClient, getCurrentUser, signOut } from './src/services/supabase.js';
 import { HomePage } from './src/components/HomePage.js';
 import { LoginPage } from './src/components/LoginPage.js';
@@ -147,6 +148,9 @@ class App {
       default:
         app.innerHTML = HomePage();
     }
+    
+    // After rendering HTML, tell Lucide to create the icons
+    createIcons();
   }
 
   setupLoginHandlers() {

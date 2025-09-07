@@ -13,9 +13,7 @@ export function HomePage() {
         <div class="flex justify-between items-center max-w-6xl mx-auto">
           <div class="flex items-center space-x-2">
             <div class="w-10 h-10 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
-              </svg>
+              <i data-lucide="credit-card" class="w-6 h-6 text-white"></i>
             </div>
             <h1 class="text-2xl font-bold text-white">Trendy Cash</h1>
           </div>
@@ -89,9 +87,7 @@ export function HomePage() {
             <!-- Trivia Feature -->
             <div class="glass-effect rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300">
               <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
-                </svg>
+                <i data-lucide="help-circle" class="w-8 h-8 text-white"></i>
               </div>
               <h3 class="text-2xl font-bold text-white mb-4">Daily Trivia</h3>
               <p class="text-blue-200 mb-6">Answer fun trivia questions daily and earn KES 50-200 per correct answer. The more you know, the more you earn!</p>
@@ -101,9 +97,7 @@ export function HomePage() {
             <!-- Articles Feature -->
             <div class="glass-effect rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300">
               <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
-                </svg>
+                <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
               </div>
               <h3 class="text-2xl font-bold text-white mb-4">Read & Earn</h3>
               <p class="text-blue-200 mb-6">Read interesting articles and get paid for your time. Each article completion earns you KES 25-100.</p>
@@ -113,9 +107,7 @@ export function HomePage() {
             <!-- Referrals Feature -->
             <div class="glass-effect rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300">
               <div class="w-16 h-16 bg-gradient-to-r from-pink-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                </svg>
+                <i data-lucide="users" class="w-8 h-8 text-white"></i>
               </div>
               <h3 class="text-2xl font-bold text-white mb-4">Refer Friends</h3>
               <p class="text-blue-200 mb-6">Invite friends to join Trendy Cash and earn 20% commission from their activities for life!</p>
