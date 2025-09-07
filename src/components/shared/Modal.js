@@ -1,3 +1,5 @@
+import { createIcons } from 'lucide';
+
 export function renderModal({ title, content, footer }) {
   const modalRoot = document.getElementById('modal-root');
   
@@ -22,17 +24,10 @@ export function renderModal({ title, content, footer }) {
   
   const overlay = document.getElementById('modal-overlay');
   
-  // Trigger transition
+  // Trigger transition and render icons
   requestAnimationFrame(() => {
     overlay.classList.add('visible');
-    // Render the icon inside the modal
-    const closeBtn = document.getElementById('close-modal-btn');
-    if(closeBtn) {
-        const { createIcons } = require('lucide');
-        createIcons({
-            nodes: [closeBtn.querySelector('i')]
-        });
-    }
+    createIcons();
   });
 
   // Close functionality

@@ -57,7 +57,7 @@ window.loadAdminSection = async function(section) {
 export function AdminPanel(user) {
   // We will attach events after rendering
   setTimeout(() => {
-    createIcons(); // Render icons in the admin layout
+    // createIcons() is called by main.js after this HTML is rendered.
     attachAdminPanelListeners();
     // Load initial dashboard content
     window.loadAdminSection('dashboard');
